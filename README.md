@@ -33,7 +33,6 @@ conda search azure-mgmt --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
