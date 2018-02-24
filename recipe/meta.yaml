@@ -1,4 +1,4 @@
-{% set version = "0.20.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: azure-mgmt
