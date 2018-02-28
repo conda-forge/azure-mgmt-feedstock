@@ -7,7 +7,7 @@ package:
 source:
   fn: azure-mgmt-{{ version }}.zip
   url: https://pypi.io/packages/source/a/azure-mgmt/azure-mgmt-{{ version }}.zip
-  md5: c027defac273731a3cebba6dbda560b965f4dbc47b7b16b73cce5fa98a3ba4de
+  md5: 76e97228ec64453c04c6b196174a3021
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
