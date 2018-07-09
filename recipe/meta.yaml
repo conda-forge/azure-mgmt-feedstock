@@ -10,11 +10,13 @@ source:
   md5: 76e97228ec64453c04c6b196174a3021
   
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - azure-mgmt-compute ==0.20.1
