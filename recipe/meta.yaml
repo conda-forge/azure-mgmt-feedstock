@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: azure-mgmt
@@ -7,11 +7,11 @@ package:
 source:
   fn: azure-mgmt-{{ version }}.zip
   url: https://pypi.io/packages/source/a/azure-mgmt/azure-mgmt-{{ version }}.zip
-  md5: cc1879aa47576be528f33e2e58af5b3f
-  
+  md5: 8a31a340614fd4ce205c9dbe7ccd082b
+
 build:
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
 
 requirements:
@@ -44,7 +44,7 @@ test:
 about:
   home: https://github.com/Azure/azure-sdk-for-python
   license: Apache-2.0
-  summary: 'Microsoft Azure Client Libraries for Python'
+  summary: Microsoft Azure Client Libraries for Python
 
 extra:
   recipe-maintainers:
